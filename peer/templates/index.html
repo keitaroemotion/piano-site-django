@@ -1,0 +1,27 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> シャロンピアノ教室 </title>
+    </head>
+    <body>
+        <div class="template">
+            {% include '_header.html' %}
+            <div class="caption"> 
+                ようこそ！千葉県柏市駅5分！ピアノ教室です 
+            </div>
+            <div class="caption3"> </div>
+        </div>
+    </body>
+</html>
+
+<style>
+.caption {
+    margin:     auto;
+    text-align: center; 
+    padding:    2em;
+    font-size:  1em;
+    height:     200px;
+}
+</style>

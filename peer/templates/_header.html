@@ -1,0 +1,52 @@
+{% load static %}
+<div class="image">
+    <img src="{% static 'image/piano_usagi.png' %}" width="100" />
+</div>
+<div class="tabs">
+    <a class="tab" href="">ホーム</a>
+    <a class="tab" href="">講師紹介</a>
+    <a class="tab" href="">実績</a>
+    <a class="tab" href="">アクセス</a>
+    <a class="tab" href="">ブログ</a>
+    <a class="tab" href="">お問い合わせ</a>
+</div>
+
+<style>
+.image {
+    margin:          auto;
+    text-align:      center;
+    padding:         1em;
+}
+
+img {
+    width:           40%;
+    height:          40%;
+}
+
+.tabs {
+    display:         flex;
+    text-align:      center;
+    justify-content: space-between;
+    //width:           60%;
+    margin:          auto;
+}
+
+.tab {
+    display:       inline-block;
+    padding:       10px;
+    width:         130px;
+    font-weight:   bold;
+}
+
+a, u {
+    text-decoration: none;
+    color:           black;
+    font-size:       1em;
+}
+
+.tab:hover {
+    background: #8A2BE2;
+    color:      #7FFF00;
+}
+
+</style>
